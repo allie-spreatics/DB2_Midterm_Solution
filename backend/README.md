@@ -18,7 +18,8 @@
 
 ## 2. 프로젝트 구조
 
-프로젝트 구조는 MVC 패턴을 따릅니다. 폴더명과 파일명은 다음과 일치해야 합니다. (\*미준수 시 1점 감점)
+프로젝트 구조는 MVC 패턴을 따릅니다. 폴더명과 파일명은 다음과 같이 만들어져 있습니다.
+(\*파일 삭제 및 추가시 1점 감점)
 
 ```txt
 backend/
@@ -41,7 +42,7 @@ backend/
 ### 2.1. config/config.json
 
 - 데이터베이스 설정 정보를 기록하는 JSON 파일입니다.
-- 원활한 채점을 위해 로컬 데이터베이스가 아닌 AWS RDS를 사용하여 데이터베이스 설정 정보는 제공됩니다. [제공된 가이드](https://www.notion.so/MySQL-Workbench-b0813628ea084016a007b0a0ddc1ae1d?pvs=4#c22159f5e81845a9bae2b01b1fd63bf8)에 따라 데이터베이스에 연결하여 프로젝트를 진행해주세요.
+- 원활한 채점을 위해 로컬 데이터베이스가 아닌 AWS RDS를 사용하여 데이터베이스 설정 정보는 제공됩니다. [제공된 가이드](https://uncovered-nutmeg-b8e.notion.site/MySQL-Workbench-55565fdb537249d6a4bf667ab9fe12eb?pvs=4)에 따라 데이터베이스에 연결하여 프로젝트를 진행해주세요.
 
   ```json
   {
@@ -55,8 +56,6 @@ backend/
   }
   > json 파일 예시
   ```
-
-- MySQL Workbench 에 데이터베이스를 통해 GUI 환경에서 테스트가 필요한 경우, [다음 가이드](https://www.notion.so/MySQL-Workbench-b0813628ea084016a007b0a0ddc1ae1d?pvs=4#fc4553707a944c70bd4a9c6d9d322634)를 따라주세요.
 
 ### 2.2 contoller/Ctodo.js
 

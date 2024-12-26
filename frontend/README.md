@@ -73,7 +73,7 @@ frontend/
   - (배점 0.5점) 헤더, 입력창, Todo 목록을 포함하는 요소의 최대 너비는 `800px` 입니다.
     > 힌트. `max-width` 속성
 
-> [프론트엔드 구현 예시 보기](https://uncovered-nutmeg-b8e.notion.site/311255703d7247048359675d434e1f45)
+> [프론트엔드 구현 예시 보기](https://uncovered-nutmeg-b8e.notion.site/caa79e835f254da9a7d78437cb4ef1de?pvs=4)
 
 ### 3.2 초기 Todo 목록 불러오기 (총 배점 2점)
 
