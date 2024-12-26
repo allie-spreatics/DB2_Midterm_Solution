@@ -1,0 +1,139 @@
+:root {
+  --main-color: #04c82f;
+  --main-bg-color: #e5ffeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 100vh;
+  width: 800px;
+  max-width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.title {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  line-height: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 160px;
+}
+
+/** Todo 입력 CSS */
+.todo-write {
+  text-align: center;
+  padding: 10px;
+}
+
+.todo-write input {
+  height: 30px;
+  max-width: 80%;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+.todo-write input::placeholder {
+  color: #b5b5b5;
+}
+
+.todo-write button {
+  margin-top: 4px;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.todo-write button:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+}
+
+/** Todo 목록 CSS */
+.todo-container {
+  margin: 20px 20px 0 20px;
+}
+
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/** Todo 아이템 CSS */
+.todo-item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 25%;
+  padding: 10px;
+}
+
+.todo-item input {
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.todo-item input:checked + span {
+  text-decoration: line-through;
+  color: #a3a3a3;
+}
+
+.todo-item button {
+  margin-left: 5px;
+  padding: 4px 8px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--main-color);
+}
+
+@media screen and (max-width: 960px) {
+  .todo-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    flex-direction: column;
+    gap: 0;
+    font-size: 28px;
+  }
+  .logo {
+    width: 120px;
+    margin-top: 10px;
+  }
+
+  .todo-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .todo-item {
+    width: initial;
+  }
+}

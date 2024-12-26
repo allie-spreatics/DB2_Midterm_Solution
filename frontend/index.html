@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="title">
+          <img class="logo" src="public/codingon.png" alt="코딩온" />
+          <span>Todo List</span>
+        </h1>
+        <div class="todo-write">
+          <input type="text" name="todo" placeholder="today's todo" />
+          <button type="button" onclick="addTodo()">작성</button>
+        </div>
+        <div class="todo-container">
+          <ul class="todo-list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="public/index.js"></script>
+  </body>
+</html>
